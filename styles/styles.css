@@ -205,8 +205,15 @@ main blockquote p::after {
 
 main img {
   max-width: 100%;
+  float: right;
   width: auto;
   height: auto;
+  padding: 10px;
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-bottom: 5px;
+  padding-left: 8px;
+
 }
 
 .icon {
@@ -242,6 +249,11 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
+/* section metadata */
+main .section.image {
+  background-color: var(--highlight-background-color);
+  float: left;
+}
 /* fonts */
 --heading-font-family: gooddog-new, sans-serif;
 --body-font-family: nunito, sans-serif;
