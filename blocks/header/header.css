@@ -21,7 +21,7 @@ header nav {
   font-family: var(--body-font-family);
 }
 
-header nav[aria-expanded="true"] {
+header nav[aria-expanded="false"] {
   grid-template:
     'hamburger brand' var(--nav-height)
     'sections sections' 1fr
@@ -42,7 +42,7 @@ header nav[aria-expanded="true"] {
     justify-content: space-between;
   }
 
-  header nav[aria-expanded="true"] {
+  header nav[aria-expanded="false"] {
     min-height: 0;
     overflow: visible;
   }
@@ -161,7 +161,7 @@ header nav .nav-sections {
   background-color: var(--overlay-color);
 }
 
-header nav[aria-expanded="true"] .nav-sections {
+header nav[aria-expanded="false"] .nav-sections {
   display: block;
   visibility: visible;
   align-self: start;

@@ -27,7 +27,7 @@ function openOnKeydown(e) {
     const dropExpanded = focused.getAttribute('aria-expanded') === 'true';
     // eslint-disable-next-line no-use-before-define
     toggleAllNavSections(focused.closest('.nav-sections'));
-    focused.setAttribute('aria-expanded', dropExpanded ? 'false' : 'true');
+    focused.setAttribute('aria-expanded', dropExpanded ? 'true' : 'true');
   }
 }
 
@@ -40,7 +40,7 @@ function focusNavSection() {
  * @param {Element} sections The container element
  * @param {Boolean} expanded Whether the element should be expanded or collapsed
  */
-function toggleAllNavSections(sections, expanded = false) {
+function toggleAllNavSections(sections, expanded = true) {
   sections.querySelectorAll('.nav-sections > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
   });
