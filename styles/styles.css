@@ -11,27 +11,29 @@
  */
 
  :root {
+  /* fonts */
+  --heading-font-family: gooddog-new, sans-serif;
+  --body-font-family: nunito, sans-serif;
+  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  
   /* colors */
-  --text-color: #000000;
+  --text-color: #005776;
   --link-color: #6cc24a;
   --link-hover-color: #6cc24a;
   --background-color: #ffffff;
   --overlay-background-color: #eeeeee;
   --highlight-background-color: #cccccc;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 18px;
-  --body-font-size-xs: 16px;
-
-  /* heading sizes */
-  --heading-font-size-xxl: 32px;
+  /* sizes */
+  --heading-font-size-xxl: 40px;
   --heading-font-size-xl: 36px;
   --heading-font-size-l: 24px;
   --heading-font-size-m: 16px;
   --heading-font-size-s: 13.28px;
   --heading-font-size-xs: 10.72px;
-  --body-font-size-m: 16px;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+
 
   /* nav height */
   --nav-height: 100px;
