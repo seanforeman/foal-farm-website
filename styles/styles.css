@@ -23,6 +23,8 @@
   --background-color: #ffffff;
   --overlay-background-color: #eeeeee;
   --highlight-background-color: #cccccc;
+  --green: #6CC24A;
+  --ffblue: #005776;   
 
   /* sizes */
   --heading-font-size-xxl: 40px;
@@ -131,29 +133,32 @@ a:hover {
 
 /* buttons */
 a.button:any-link, button {
-  font-family: var(--body-font-family);
-  display: flex;
   box-sizing: border-box;
   text-decoration: none;
   border: 2px solid transparent;
-  padding: 5px 3px;
+  padding: 1px 1px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
+  margin: 50px;
   cursor: pointer;
   color: var(--background-color);
   background-color: var(--link-color);
-  margin: 50px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 1px;
   justify-content: center;  
   align-items: center;  
+  text-align:center;
+  padding:8px 30px 7px!important;
+  display:flex;
+  font-weight:400;
+  font-family:gooddog-new,sans-serif;
+    
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+a.button:hover, a.button:focus, button:hover, button:focus  {background-color:var(--green)!important;color:#fff;color:#fff!important};
   cursor: pointer;
 }
 
@@ -162,12 +167,8 @@ button:disabled, button:disabled:hover {
   cursor: unset;
 }
 
-a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color)
-}
-
+a.button.secondary, button.secondary {background-color:var(--ffblue)!important;color:#fff!important};
+    background-color: var(--link-hover-color)}
 main input {
   font-size: 1.25rem;
   width: 100%;
